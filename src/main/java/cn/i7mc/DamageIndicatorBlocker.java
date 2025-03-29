@@ -23,10 +23,10 @@ public class DamageIndicatorBlocker {
                 try {
                     WrappedParticle<?> particleType = packet.getNewParticles().read(0);
                     if (particleType != null && particleType.getParticle() == Particle.DAMAGE_INDICATOR) {
-                        int count = packet.getIntegers().read(0); // 粒子数量
-                        double x = packet.getDoubles().read(0);   // 粒子位置X坐标
-                        double y = packet.getDoubles().read(1);   // 粒子位置Y坐标
-                        double z = packet.getDoubles().read(2);   // 粒子位置Z坐标
+                        int count = packet.getIntegers().read(0);
+                        double x = packet.getDoubles().read(0);
+                        double y = packet.getDoubles().read(1);
+                        double z = packet.getDoubles().read(2);
                         if (count > 0) {
                             event.setCancelled(true);
                         }
