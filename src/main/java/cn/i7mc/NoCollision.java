@@ -5,7 +5,6 @@ public class NoCollision extends JavaPlugin {
     private DamageIndicatorBlocker damageIndicatorBlocker;
     @Override
     public void onEnable() {
-        TheAPIInitializer.initialize();
         noCollisionManager = new NoCollisionManager(this);
         noCollisionManager.enableGlobalNoCollision();
         damageIndicatorBlocker = new DamageIndicatorBlocker(this);
