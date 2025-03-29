@@ -1,0 +1,7 @@
+name: NoCollision
+version: '${project.version}'
+main: cn.i7mc.NoCollision
+api-version: '1.21'
+depend: [TheAPI, ProtocolLib]
+authors: [Saga]
+description: 无碰撞插件，用于实现玩家之间的无碰撞效果和禁用伤害指示器 
